@@ -1,0 +1,39 @@
+.modal-header{
+    padding:5px 10px;
+}
+.modal-body{
+    padding-top:0;
+    .customCard{
+        img{width:100%; border-radius: 15px;margin-top:10px}
+        .contentPoster_landscape{display: none;}
+        .showText{
+            padding:10px;
+            font-size:15px;
+            border:solid 2px #ccc;
+            margin:10px 0;
+            border-radius: 10px;
+        }
+        .customeBtn{display:block}
+    }
+}
+.contentMediaWrap{
+    background:none;border:none;
+    &:hover, &:active, &:focus{
+        background:none;border:none;
+        box-shadow:none;
+    }
+}
+.modal-title.h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (min-width: 835px){
+    .modal-body {
+        .customCard{
+            .contentPoster_landscape{display: block;}
+            .contentPoster{display: none;}
+        }
+    }
+    
+}
